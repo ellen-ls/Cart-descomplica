@@ -3,7 +3,7 @@
     font-size: 2rem;
     margin:200px auto 0;
     animation: spin 1s linear infinite;
-    color: #1abe88;
+    color: #16b480;
 }
 
 @keyframes spin{
