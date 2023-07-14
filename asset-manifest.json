@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/ellen-ls/Cart-descomplica/static/css/main.7b191fb2.css",
+    "main.js": "/ellen-ls/Cart-descomplica/static/js/main.21b2af31.js",
+    "index.html": "/ellen-ls/Cart-descomplica/index.html",
+    "main.7b191fb2.css.map": "/ellen-ls/Cart-descomplica/static/css/main.7b191fb2.css.map",
+    "main.21b2af31.js.map": "/ellen-ls/Cart-descomplica/static/js/main.21b2af31.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7b191fb2.css",
+    "static/js/main.21b2af31.js"
+  ]
+}
