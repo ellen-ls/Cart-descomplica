@@ -8,14 +8,22 @@ import formatCurrency from '../../utils/formatCurrency'
 const Cart = () => {
     const{cartItems, isCartVisible} = useContext(AppContext)
 
-    const totalPrice = cartItems.reduce((acc, item)=> item.price + acc,0)
+    const getTotalPrice = () => {
+      let totalPrice = 0;
+      cartItems.forEach((item) => {
+        totalPrice += item.price * item.quantity;
+      });
+      return totalPrice;
+    };
+
+    // const totalPrice = cartItems.reduce((acc, item)=> item.price + acc,0)
    
   return (
    <section className={`cart ${isCartVisible ? 'cart--active': ''}`} >
     <div className='cart-items'>
         {cartItems.map((cartItem)=><CartItem key={cartItem.id} data={cartItem}/>)}
     </div>
-    <div className='cart-resume'>{formatCurrency(totalPrice,'BRL')}</div>
+    <div className='cart-resume'>{formatCurrency(getTotalPrice(),'BRL')}</div>
    </section>
   )
 }
